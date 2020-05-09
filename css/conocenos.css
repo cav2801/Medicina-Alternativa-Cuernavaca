@@ -1,0 +1,229 @@
+.menu__link--select {
+    background-color: rgb(109, 109, 230);
+}
+
+.contact-information {
+    
+    padding-top: 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid gainsboro;
+    
+}
+
+.logo {
+    background-color: teal;
+    color: white;
+}
+
+.main-header__contactInfo__phone {
+    background-color: teal;
+    color: white;
+}
+
+.group__title {
+    font-size: 40px;
+    color: rgb(0, 154, 226);
+}
+
+.column__title {
+    font-size: 20px;
+    color: rgb(21, 21, 51);
+}
+
+.contact-information .column__title {
+    font-weight: bold;
+}
+
+.contact-information [class*="icon-"] {
+    font-size: 1.3em;
+    margin-right: 7px;
+    position: relative;
+}
+
+.formulario {
+    padding: 5px;
+    padding-top: 0;
+}
+
+.mapa {
+    height: 300px;
+    width: 100%;
+}
+
+.main-footer {
+    background-color: teal;
+}
+
+
+.our-team {
+    display: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.our-team .container--flex {
+    align-items: flex-start;
+}
+
+.our-team__title {
+    
+    color: rgb(0, 154, 226);
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.our-team__img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    object-fit: cover;
+    
+}
+
+
+.our-team__txt {
+    padding: 10px;
+    
+}
+
+
+@media screen and (min-width:480px) {
+    .contact-information p {
+        font-size: 14px;
+        text-align: center;   
+        padding-bottom: 5px;
+        font-weight: bold;
+        
+    }
+
+    .logo {
+        background: none;
+    }
+
+    .main-header__contactInfo__phone {
+        background: none;
+    }
+
+    .mapa {
+        height: 280px;
+        padding-right: 10px;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .contact-information h3 {
+        font-size: 20px;
+        text-align: center;   
+        padding-bottom: 5px;
+        font-weight: bold;
+        color: rgb(21, 21, 51);
+    }
+
+    .main-footer .column--33 h2 {
+        
+        color: rgb(21, 21, 51);
+        font-weight: bold;
+    }
+
+    .contact-information {
+        border-right: 1px solid whitesmoke;
+        border-bottom: none;
+    }
+
+    .contact .container--flex {
+        align-items: flex-start;
+    }
+
+    .contact-information .column__title {
+        padding-bottom: 5px;
+        
+    }
+
+    .group__title {
+        font-size: 36px;
+        
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    
+    .contact-information p {
+        font-size: 18px;
+        text-align: center;   
+        padding-bottom: 5px;
+        font-weight: bold;
+        
+    }
+
+    .mapa {
+        height: 300px;
+    }
+
+    .contact-information {
+        border-right: 1px solid whitesmoke;
+        border-bottom: none;
+        padding-bottom: 30px;
+    }
+
+    .btn {
+        font-size: 20px;
+        
+    }
+
+    .contact .container--flex {
+        align-items: flex-start;
+    }
+
+    .contact-information h3 {
+        font-size: 28px;
+    }
+
+    .group__title {
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .contact-information p {
+        font-size: 24px;
+    }
+
+    .group__title {
+        font-size: 48px;
+        color: rgb(0, 154, 226);
+    }
+
+    .mapa {
+        height: 350px;
+        
+    }
+
+    .contact-information h3 {
+        font-size: 34px;
+    }
+
+    .contact-information {
+        border-right: 1px solid whitesmoke;
+        border-bottom: none;
+        padding-bottom: 60px;
+    }
+
+    .contact .container--flex {
+        align-items: flex-start;
+    }
+
+    .btn {
+        font-size: 24px;
+        width: 150px;
+    }
+
+
+}
+

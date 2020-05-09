@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:400,700&display=swap');
+
+body {
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+/*estilos base*/
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+
+}
+
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    width: 100%;
+
+}
+
+/*color que debo recordar rgb(51, 51, 77);*/
+
+
+
+/*estilos header*/
+
+.main-header {
+    width: 100%;
+
+}
+
+.logo {
+    font-size: 1.8em;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 100;
+    background-color: rgb(255, 0, 149);
+}
+
+.main-header__contactInfo__phone {
+    background-color: rgb(255, 0, 149);
+    color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 10px;
+
+}
+
+.main-header__contactInfo__address {
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(51, 51, 77);
+    color: white;
+}
+
+.main-header [class*="icon-"]:before {
+    position: relative;
+    top: -1px;
+    right: 3px;
+}
+
+/*estilos de menu*/
+
+.main-nav {
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;background-color: rgba(0, 0, 0, 0.548);
+}
+
+.icon-menu {
+    display: block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    line-height: 37px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon [class*="icon-"] {
+    color: black;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.social-icon__link {
+    text-decoration: none;
+}
+
+.menu {
+    
+    position: absolute;
+    top: 55px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+}
+
+.menu__link {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu__link--select {
+    background-color: rgb(255, 108, 250);
+}
+
+.menu__link:hover {
+    background-color: rgb(70, 199, 216);
+}
+
+.mostrar {
+    height: 210px;
+}
+
+
+/*estilos de banner*/
+
+.banner {
+    margin-top: -55px;
+    position: relative;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.363);
+    z-index: 1000;
+    top: 0;
+
+}
+
+.banner__img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.banner__content {
+    width: 90%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*estilos principales*/
+
+.group--color .container {
+    background-color: rgb(58, 239, 252);
+    color: rgb(51, 51, 77);
+    padding: 9px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+
+
+.main__title {
+    margin: 10px 0;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.main__txt {
+    padding-bottom: 14px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main__h3 {
+    font-size: 18px;
+}
+
+.column__title {
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.column__txt {
+    text-align: center;
+    font-size: 14px;
+}
+
+.main__about__description .column:nth-child(2) {
+    padding: 10px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    width: 120px;
+    margin: 10px auto;
+    color: rgb(253, 253, 253);
+    padding: 10px;
+    background-color: rgb(118, 108, 255);
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: rgb(61, 96, 212);
+}
+
+.group__title {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.today-special .column {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.today-special__img {
+    margin: auto;
+    max-width: 350px;
+    height: 240px;
+}
+
+.today-special__title {
+    text-align: center;
+    font-size: 1.1em;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    color: rgb(255, 41, 244);
+}
+
+.today-special__price {
+    font-size: 0.9em;
+    color: rgb(51, 51, 77);
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+/*footer*/
+
+.main-footer {
+    background-color: rgb(255, 0, 247);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+.main-footer .column--33 .column__title h2 {
+    color: white;
+}
+
+.column__txt {
+    font-size: 14px;
+}
+
+.copy {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.main-footer [class*="icon-"] {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.main-footer [class*="icon-"]:before {
+    position: relative;
+    top: 0;
+    right: 4px;
+    font-size: 14px;
+}
+
+.listaf {
+    text-align: center;
+    list-style: none;
+    font-size: 14px;
+}
+
+/*estilos responsive*/
+
+@media screen and (min-width:480px) {
+    .logo {
+        color: white;
+        font-size: 14px;
+        background: none;
+    }
+
+    .main-header__contactInfo {
+        text-align: right;
+        background: none;
+        color: white;
+        font-size: 10px;
+    }
+
+    .group--color .main__title {
+        font-size: 26px;
+    }
+
+    .group--color .main__txt {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+   
+    .main-header__contactInfo__phone {
+        background: none;
+        font-size: 10px; 
+        padding-bottom: 0px; 
+        color: white;      
+    }
+
+    .main-header__contactInfo__address {
+        color: white;
+        font-size: 10px;
+        background: none;
+    }
+
+    .main-nav {
+        background-color: rgba(0, 0, 0, 0.61);
+    }
+
+   
+    .banner {
+        margin-top: -190px;
+        z-index: -1000;
+        font-size: 24px;
+    }
+
+    .banner__img {
+        height: 500px;
+    }
+
+    .banner__content {
+        z-index: 1100;
+        margin-top:70px;
+    }
+
+    .column--50 {
+        width: 49%;
+    }
+
+   
+
+    .column--50-25 {
+        width: 49%;
+    }
+
+    .column--33 {
+        width: 32.5%;
+        
+    }
+
+    .listaf {
+        text-align: center;
+        list-style: none;
+    }
+
+    .today-special__img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .main__about__description .column.column:nth-child(2) {
+        padding-left: 5px;
+        
+    }
+
+    
+
+    .main__about__description .column__txt {
+        text-align: center;
+        padding-right: 5px;
+        font-size: 14px;
+        
+    }
+
+    .main__about__description .column__title {
+        text-align: center;
+        padding-right: 5px;
+        font-size: 15px;
+    }
+
+    .main__about__description .column--50 img {
+        height: 240px;
+        object-fit: cover;
+
+    }
+
+    .main__about__description a .btn {
+        margin: 4px;
+        text-align: center;
+        font-size: 14px;
+        text-align: center;
+    }
+
+   
+
+    .today-special .column {
+        border: 5px solid whitesmoke;
+        padding: 5px;
+    }
+
+    .main__txt {
+        padding-bottom: 5px;
+    }
+
+    .main-footer .container--flex {
+        align-items: flex-start;
+    }
+
+    .today-special__title {
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+
+    .today-special__price {
+        font-size: 14px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .today-special__img {
+        height: 150px;
+    }
+
+    .main-footer .column--33 h2 {
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+
+    .column__txt {
+        font-size: 13px;
+    }
+
+    .container--flex {
+        align-items: flex-start;
+    }
+   
+}
+
+@media screen and (min-width:768px) {
+    
+    .group--color .main__title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .group--color .main__txt {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .group--color .main__h3 {
+        font-size: 26px;
+    }
+
+    .main__about__description {
+        margin-top: 0px;
+    }
+
+    .main__about__description .column--50:nth-child(2) .column__title {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    .main__about__description .column--50:nth-child(2) .column__txt {
+        line-height: 20px;
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+
+    .column--50-25 {
+        width: 24.5%;
+    }
+
+    .column__title {
+        font-size: 1.6em;
+    }
+
+    .group__title {
+        font-size: 1.6em;
+    }
+
+    .today-special__title {
+        font-size: 20px;
+    }
+
+    .today-special__price {
+        font-size: 14px;
+    }
+
+    .today-special__img {
+        height: 150px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .container {
+        width: 90%;
+    }
+    .logo {
+        font-size: 1.8em;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .main-header__contactInfo__phone, .main-header__contactInfo__address {
+        padding-right: 0;
+        
+        font-size: 1.1em;
+    }
+
+    .main-nav {
+        padding: 0px;
+    }
+
+    .banner__content {
+        font-size: 2.2em;
+    }
+
+    .icon-menu {
+        display: none;
+        
+    }
+
+    .menu {
+        position: static;
+        display: flex;
+        height: auto;
+        width: auto;
+    }
+
+    .main-nav .social-icon {
+        font-size: 14px;
+        padding-top: 5px;
+    }
+
+    .menu__link {
+        padding: 14px;
+    }
+
+    .group--color .container {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 20px;
+        padding-bottom: 40px;
+        width: 100%;
+    }
+
+    .group--color .main__title {
+        font-size: 36px;
+    }
+
+    .group--color .main__txt {
+        font-size: 24px;
+    }
+
+    .group--color .main__h3 {
+        font-size: 24px;
+    }
+
+    .main__about__description .column:nth-child(2) .column__title {
+        font-size: 22px;
+    }
+
+    .main__about__description .column:nth-child(2) .column__txt {
+        line-height: 20px;
+        font-size: 20px;
+    }
+
+    .main__about__description .column:nth-child(2) a {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .group__title {
+        font-size: 36px;
+    }
+
+    .today-special__title {
+        font-size: 26px;
+    }
+
+    .today-special__price {
+        font-size: 20px;
+    }
+
+    .main-footer {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .main__about__description img{ 
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .main-footer .copy {
+        font-size: 16px;
+    }
+
+    .main-footer .listaf {
+        font-size: 16px;
+    }
+
+    .main-footer .column__txt  {
+        font-size: 16px;
+    }
+
+    .main-footer .column--33 h2  {
+        font-size: 18px;
+    }
+
+    .main-footer [class*="icon-"] {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+    .main-footer [class*="icon-"]:before {
+        position: relative;
+        top: 0;
+        right: 4px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    .container {
+        width: 1500px;
+    }
+
+    .main__about__description img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .today-special__img {
+        height: 300px;
+
+    }
+}
